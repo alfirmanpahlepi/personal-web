@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import HeroImage from "./HeroImage";
 import Navigations from "./Navigations";
 
 interface LayoutProps {
@@ -16,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
         >
             <div className="w-11/12 h-[550px] bg-white flex">
                 <div className="h-full w-[400px]">
-                    img
+                    <HeroImage />
                 </div>
                 <div className="h-full w-[calc(100%-400px)]">
                     <nav className="h-[40px]">
