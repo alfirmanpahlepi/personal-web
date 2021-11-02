@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 // eslint-disable-next-line import/extensions
 import { SocialMedias } from '@/types';
 import Github from './icons/Github';
