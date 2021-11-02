@@ -3,7 +3,7 @@ import HeroImage from './HeroImage';
 import Navigations from './Navigations';
 
 interface LayoutProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
@@ -15,9 +15,9 @@ export default function Layout({ children }: LayoutProps) {
       style={{ background: theme }}
     >
       <div className="w-11/12 h-[550px] bg-white flex">
-        <div className="h-full w-[400px]">
+        <aside className="h-full w-[400px]">
           <HeroImage />
-        </div>
+        </aside>
         <div className="h-full w-[calc(100%-400px)]">
           <nav className="h-[40px]">
             <Navigations />
