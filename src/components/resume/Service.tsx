@@ -4,7 +4,7 @@ import Title from "../Title";
 
 export default function Service() {
   return (
-    <div className="mt-4">
+    <div>
       <Title>
         my <b className="font-semibold">services</b>
       </Title>

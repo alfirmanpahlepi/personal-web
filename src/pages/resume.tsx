@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout"
-import Service from "@/components/resume/service"
+import Service from "@/components/resume/Service"
 import { NextPage } from "next"
 
 const Resume: NextPage = () => {
