@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { ReactNode } from 'react';
 import HeroImage from './HeroImage';
 import Navigations from './Navigations';
