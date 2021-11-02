@@ -22,3 +22,9 @@ export type Hobbies = Array<{
   name: string;
   icon: JSX.Element;
 }>;
+
+export type Services = Array<{
+  text: string;
+  desc: string;
+  icon: JSX.Element;
+}>;

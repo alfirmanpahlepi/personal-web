@@ -10,10 +10,14 @@ import Globe from "./Globe"
 import MapMarker from "./MapMarker"
 import Envelope from "./Envelope"
 import Graduation from "./Graduation"
-import Guitar from "./Guitar"
 import Ball from "./Ball"
 import Gamepad from "./Gamepad"
 import Camera from "./Camera"
+import Guitar from "./Guitar"
+import Dollar from "./Dollar"
+import Code from "./Code"
+import LightBulb from "./LightBulb"
+import Diamond from "./Diamond"
 
 export {
     Github as GithubIcon,
@@ -31,5 +35,9 @@ export {
     Camera as CameraIcon,
     Gamepad as GamepadIcon,
     Ball as BallIcon,
+    Diamond as DiamondIcon,
+    LightBulb as LightBulbIcon,
+    Code as CodeIcon,
+    Dollar as DollarIcon,
     Guitar as GuitarIcon,
 }

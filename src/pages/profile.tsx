@@ -7,7 +7,7 @@ import Hobby from "@/components/profile/Hobby";
 const Profile: NextPage = () => {
   return (
     <Layout>
-      <section className="min-h-full">
+      <section>
         <About />
         <Education />
         <Hobby />
