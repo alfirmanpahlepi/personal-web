@@ -3,3 +3,5 @@ export type SocialMedias = Array<{
   link: string;
   color: string;
 }>;
+
+export type Navs = Array<{ name: string }>;

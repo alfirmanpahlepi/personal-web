@@ -22,7 +22,7 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="h-[40px]">
             <Navigations />
           </nav>
-          <main className="h-[calc(100%-40px)] ring ring-red-400">
+          <main className="h-[calc(100%-40px)]">
             {children}
           </main>
         </div>
