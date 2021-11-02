@@ -18,6 +18,9 @@ import Dollar from "./Dollar"
 import Code from "./Code"
 import LightBulb from "./LightBulb"
 import Diamond from "./Diamond"
+import MapMarkerAlt from "./MapMarkerAlt"
+import EnvelopeAlt from "./EnvelopeAlt"
+import PhoneAlt from "./PhoneAlt"
 
 export {
     Github as GithubIcon,
@@ -35,6 +38,9 @@ export {
     Camera as CameraIcon,
     Gamepad as GamepadIcon,
     Ball as BallIcon,
+    PhoneAlt as PhoneAltIcon,
+    EnvelopeAlt as EnvelopeAltIcon,
+    MapMarkerAlt as MapMarkerAltIcon,
     Diamond as DiamondIcon,
     LightBulb as LightBulbIcon,
     Code as CodeIcon,
