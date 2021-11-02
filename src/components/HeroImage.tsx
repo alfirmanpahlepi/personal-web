@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/extensions
 import { SocialMedias } from '@/types';
 import Github from './icons/Github';
 import Instagram from './icons/Instagram';
@@ -12,7 +11,7 @@ export default function HeroImage() {
       style={{ backgroundImage: 'url(/hero-img.jpg)' }}
     >
       <ul className="w-full flex justify-evenly mb-3">
-        { // eslint-disable-next-line no-use-before-define
+        {
           socialMedias.map((social) => (
             <li key={social.color} className="group h-12 w-12 relative bg-white border-2 border-white rounded-full overflow-hidden">
               <a href="#" className="h-full w-full grid place-items-center z-20 absolute text-gray-800 group-hover:text-white duration-500">
