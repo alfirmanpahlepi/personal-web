@@ -4,4 +4,4 @@ export type SocialMedias = Array<{
   color: string;
 }>;
 
-export type Navs = Array<{ name: string }>;
+export type Navs = Array<{ name: string; link: string }>;
