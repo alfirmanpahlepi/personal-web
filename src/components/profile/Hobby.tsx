@@ -4,7 +4,7 @@ import { BallIcon, GamepadIcon, GuitarIcon, CameraIcon } from "../icons";
 
 export default function Hobby() {
   return (
-    <div className="mt-4 overflow-x-hidden bg-gray-100">
+    <div className="overflow-x-hidden bg-gray-100">
       <Title>
         my <b className="font-semibold">hobbies</b>
       </Title>
