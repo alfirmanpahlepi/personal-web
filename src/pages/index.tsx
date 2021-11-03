@@ -3,7 +3,7 @@ import Layout from '@/components/Layout';
 
 const Home: NextPage = () => (
   <Layout>
-    <section className="h-full flex flex-col items-center justify-center text-center">
+    <section className="h-full flex flex-col items-center justify-center text-center py-10">
       <div className="border-b-4 border-pink-600 font-semibold py-4 w-3/4 text-purple-900 mb-6">
         <h3 className="text-lg sm:text-xl">Hello I'am</h3>
         <h1 className="text-2xl sm:text-4xl my-2">

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import HeroImage from './HeroImage';
 import Navigations from './Navigations';
+import { motion } from "framer-motion"
 
 interface LayoutProps {
   children: ReactNode;
@@ -22,9 +23,12 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="h-[40px]">
             <Navigations />
           </nav>
-          <main className="h-[calc(100%-40px)] overflow-auto">
+          <motion.main
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="h-[calc(100%-40px)] overflow-auto">
             {children}
-          </main>
+          </motion.main>
         </div>
       </div>
     </div>
