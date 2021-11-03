@@ -11,14 +11,14 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div
-      className="min-h-screen flex justify-center items-center"
+      className="min-h-screen flex justify-center items-center px-1 xs:px-3"
       style={{ background: theme }}
     >
-      <div className="w-11/12 h-[550px] bg-white flex">
-        <aside className="h-full w-[400px]">
+      <div className="w-full sm:w-11/12 xl:w-[1173.33px] min-h-screen sm:min-h-full lg:h-[550px] bg-white lg:flex lg:rounded-lg overflow-hidden">
+        <aside className="h-[480px] sm:h-[640px] lg:h-full lg:w-[400px]">
           <HeroImage />
         </aside>
-        <div className="h-full w-[calc(100%-400px)]">
+        <div className="h-full lg:w-[calc(100%-400px)]">
           <nav className="h-[40px]">
             <Navigations />
           </nav>

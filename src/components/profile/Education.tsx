@@ -8,21 +8,21 @@ export default function Education() {
       <Title>
         my <b className="font-semibold">Education</b>
       </Title>
-      <ul className="border-l-2 border-pink-400/40 relative left-36 xs:left-40 sm:left-48 space-y-8 pb-10">
+      <ul className="border-l-2 border-pink-400/40 relative left-6 sm:left-40 space-y-8 pb-10">
         <div
           style={{ background: "linear-gradient(45deg,#c13584,#e1306c,#fd1d1d)" }}
-          className="w-20 h-20 rounded-full relative flex justify-center items-center right-[43px] -top-5"
+          className="w-14 h-14 sm:w-20 sm:h-20 rounded-full relative flex justify-center items-center left-[-30px] sm:right-[43px] -top-5"
         >
-          <i className="text-white h-10 w-10">
+          <i className="text-white h-7 w-7 sm:h-10 sm:w-10">
             <GraduationIcon />
           </i>
         </div>
         {educations.map((el, index) => (
           <li
             key={index}
-            className="flex space-x-4 relative right-[137px]"
+            className="flex space-x-4 relative -left-6 sm:left-auto sm:right-[137px]"
           >
-            <div>
+            <div className="hidden sm:block">
               <h3 className="w-28 bg-pink-600 ring ring-pink-200 text-center py-1 text-white rounded-2xl text-sm sm:text-base">
                 {el.years}
               </h3>
@@ -30,7 +30,10 @@ export default function Education() {
             <div>
               <div className="h-4 w-4 rounded-full bg-pink-600 ring ring-pink-200 relative top-2"></div>
             </div>
-            <div className="w-full">
+            <div className="w-full space-y-2 sm:space-y-0s">
+              <h3 className="w-28 bg-pink-600 ring ring-pink-200 text-center py-1 text-white rounded-2xl text-sm sm:text-base sm:hidden">
+                {el.years}
+              </h3>
               <h5 className="sm:text-lg text-purple-900 font-semibold">
                 {el.school}
               </h5>

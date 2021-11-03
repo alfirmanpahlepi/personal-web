@@ -4,7 +4,7 @@ export type SocialMedias = Array<{
   color: string;
 }>;
 
-export type Navs = Array<{ name: string; link: string }>;
+export type Navs = Array<{ name: string; link: string; icon: JSX.Element }>;
 
 export type Abouts = Array<{
   text: string;

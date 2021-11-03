@@ -1,4 +1,5 @@
 import { Navs } from "@/types";
+import { CoperIcon, DocumentIcon, HomeIcon, PhoneIcon, UserIcon } from "./icons";
 import { NavLink } from "./NavLink";
 
 export default function Navigations() {
@@ -12,7 +13,8 @@ export default function Navigations() {
             activeClassname="bg-white text-[#E1306C] font-semibold"
             deactiveClassname="bg-gray-100 text-gray-500 hover:bg-gray-200"
           >
-            {nav.name}
+            <span className="hidden xs:inline">{nav.name}</span>
+            <i className="xs:hidden h-4 w-4">{nav.icon}</i>
           </NavLink>
         </li>
       ))}
@@ -21,9 +23,9 @@ export default function Navigations() {
 }
 
 const navs: Navs = [
-  { name: "home", link: "/" },
-  { name: "profile", link: "/profile" },
-  { name: "resume", link: "/resume" },
-  { name: "portfolio", link: "/portfolio" },
-  { name: "contact", link: "/contact" },
+  { name: "home", link: "/", icon: <HomeIcon /> },
+  { name: "profile", link: "/profile", icon: <UserIcon /> },
+  { name: "resume", link: "/resume", icon: <DocumentIcon /> },
+  { name: "portfolio", link: "/portfolio", icon: <CoperIcon /> },
+  { name: "contact", link: "/contact", icon: <PhoneIcon /> },
 ]

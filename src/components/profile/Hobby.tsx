@@ -15,7 +15,7 @@ export default function Hobby() {
             key={index}
             className="flex flex-col justify-center items-center space-y-3 py-4"
           >
-            <i className="text-xl text-purple-900 h-10 w-10">
+            <i className="text-xl text-purple-900 h-7 w-7 sm:h-10 sm:w-10">
               {el.icon}
             </i>
             <p className="text-center text-purple-900">{el.name}</p>

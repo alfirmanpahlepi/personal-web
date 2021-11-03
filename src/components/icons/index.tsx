@@ -21,6 +21,9 @@ import Diamond from "./Diamond"
 import MapMarkerAlt from "./MapMarkerAlt"
 import EnvelopeAlt from "./EnvelopeAlt"
 import PhoneAlt from "./PhoneAlt"
+import Home from "./Home"
+import Document from "./Document"
+import Coper from "./Coper"
 
 export {
     Github as GithubIcon,
@@ -38,6 +41,9 @@ export {
     Camera as CameraIcon,
     Gamepad as GamepadIcon,
     Ball as BallIcon,
+    Coper as CoperIcon,
+    Document as DocumentIcon,
+    Home as HomeIcon,
     PhoneAlt as PhoneAltIcon,
     EnvelopeAlt as EnvelopeAltIcon,
     MapMarkerAlt as MapMarkerAltIcon,
