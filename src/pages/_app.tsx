@@ -1,10 +1,16 @@
+import { useEffect, useRef } from 'react';
 import type { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 import { motion } from "framer-motion"
 import HeroImage from '@/components/HeroImage';
 import Navigations from '@/components/Navigations';
 import 'tailwindcss/tailwind.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+  const { asPath } = useRouter()
+  const layoutRef = useRef<HTMLDivElement>(null)
+  const mainRef = useRef<HTMLDivElement>(null)
 
   const background: string = 'linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d)';
 
@@ -16,8 +22,20 @@ function MyApp({ Component, pageProps }: AppProps) {
     return arr
   }
 
+  useEffect(() => {
+    if (window.matchMedia('(max-width: 1280px)') && asPath !== "/") {
+      const layoutScrollHeight: number = layoutRef.current?.scrollHeight || 0;
+      const mainScrollHeight: number = mainRef.current?.scrollHeight || 0;
+      window.scroll({
+        top: layoutScrollHeight - mainScrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  }, [asPath])
+
   return (
     <motion.div
+      ref={layoutRef}
       initial={{ background }}
       animate={{
         background: colors(),
@@ -33,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <aside className="h-[480px] sm:h-[640px] lg:h-full lg:w-[400px]">
           <HeroImage />
         </aside>
-        <div className="h-full lg:w-[calc(100%-400px)]">
+        <div ref={mainRef} className="h-full lg:w-[calc(100%-400px)]">
           <nav className="h-[40px]">
             <Navigations />
           </nav>
