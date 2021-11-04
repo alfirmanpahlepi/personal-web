@@ -7,20 +7,9 @@ import Navigations from '@/components/Navigations';
 import 'tailwindcss/tailwind.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-
   const { asPath } = useRouter()
   const layoutRef = useRef<HTMLDivElement>(null)
   const mainRef = useRef<HTMLDivElement>(null)
-
-  const background: string = 'linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d)';
-
-  const colors = (): string[] => {
-    let arr = [];
-    for (let i = 45; i <= 360; i += 45) {
-      arr.push(`linear-gradient(${i}deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d)`)
-    }
-    return arr
-  }
 
   useEffect(() => {
     if (window.matchMedia('(max-width: 1280px)') && asPath !== "/") {
@@ -32,6 +21,16 @@ function MyApp({ Component, pageProps }: AppProps) {
       });
     }
   }, [asPath])
+
+  const background: string = 'linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#FF9671,#FFC75F,#F9F871)';
+
+  const colors = (): string[] => {
+    let arr = [];
+    for (let i = 45; i <= 360; i += 45) {
+      arr.push(`linear-gradient(${i}deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#FF9671,#FFC75F,#F9F871)`)
+    }
+    return arr
+  }
 
   return (
     <motion.div
