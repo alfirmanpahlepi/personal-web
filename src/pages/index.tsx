@@ -1,9 +1,8 @@
 import type { NextPage } from 'next';
-import Layout from '@/components/Layout';
 import NextHead from "next/head"
 
 const Home: NextPage = () => (
-  <Layout>
+  <>
     <NextHead>
       <title>Alfirman Ejha Pahlepi</title>
       <meta
@@ -62,7 +61,7 @@ const Home: NextPage = () => (
         Download CV
       </a>
     </section>
-  </Layout>
+  </>
 
 );
 
