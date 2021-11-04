@@ -25,11 +25,11 @@ export default function Service() {
                 {el.icon}
               </i>
             </div>
-            <h6 className="text-center pb-3 my-5">
+            <div className="text-center pb-3 my-5">
               <span className="pb-3 border-b-2 border-pink-500 font-bold text-purple-900">
                 {el.text}
               </span>
-            </h6>
+            </div>
             <p className="text-center text-sm text-purple-900">{el.desc}</p>
           </li>
         ))}

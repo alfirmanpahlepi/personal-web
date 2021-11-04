@@ -16,7 +16,7 @@ export default function About() {
           >
             <div className="flex items-center space-x-3">
               <i className="h-4 w-4">{el.icon}</i>
-              <h6 className="font-bold">{el.text}</h6>
+              <p className="font-bold">{el.text}</p>
             </div>
             <p>{el.value}</p>
           </li>

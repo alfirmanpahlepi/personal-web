@@ -36,7 +36,7 @@ const Home: NextPage = () => (
         <h1 className="text-2xl sm:text-4xl my-2">
           Alfirman Ejha Pahlepi
         </h1>
-        <h6 className="sm:text-lg">Student of Malikussaleh University</h6>
+        <p className="sm:text-lg">Student of Malikussaleh University</p>
       </div>
       <p className="text-purple-700 text-sm lg:text-base px-8">
         Lorem ipsum dolor sit amt illo veritatis praesentium facere alias, ipsum asperiores officia. Optio nesciunt nostrum magnam soluta voluptatum sequi itaque odit fugiat earum in?
