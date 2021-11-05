@@ -30,7 +30,7 @@ export default function Education() {
             <div>
               <div className="h-4 w-4 rounded-full bg-pink-600 ring ring-pink-200 relative top-2"></div>
             </div>
-            <div className="w-full space-y-2 sm:space-y-0s">
+            <div className="w-full space-y-2 sm:space-y-0">
               <h3 className="w-28 bg-pink-600 ring ring-pink-200 text-center py-1 text-white rounded-2xl text-sm sm:text-base sm:hidden">
                 {el.years}
               </h3>
