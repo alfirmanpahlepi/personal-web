@@ -8,13 +8,11 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head title="Contact" description="contact me" />
-      <section>
-        <div className="w-11/12 xs:w-5/6 mx-auto">
-          <Title>Contact <b className="font-semibold">me</b></Title>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <Profile />
-            <Form />
-          </div>
+      <section className="w-11/12 xs:w-5/6 mx-auto">
+        <Title>Contact <b className="font-semibold">me</b></Title>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <Profile />
+          <Form />
         </div>
       </section>
     </>

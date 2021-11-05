@@ -24,6 +24,7 @@ import PhoneAlt from "./PhoneAlt"
 import Home from "./Home"
 import Document from "./Document"
 import Coper from "./Coper"
+import Arrow from "./Arrow"
 
 export {
     Github as GithubIcon,
@@ -41,6 +42,7 @@ export {
     Camera as CameraIcon,
     Gamepad as GamepadIcon,
     Ball as BallIcon,
+    Arrow as ArrowIcon,
     Coper as CoperIcon,
     Document as DocumentIcon,
     Home as HomeIcon,
