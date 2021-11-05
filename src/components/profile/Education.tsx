@@ -37,7 +37,7 @@ export default function Education() {
               <p className="sm:text-lg text-purple-900 font-semibold">
                 {el.school}
               </p>
-              <p className="text-purple-600 text-sm sm:text-base">{el.desc}</p>
+              <p className="text-purple-600 text-xs sm:text-sm">{el.desc}</p>
             </div>
           </li>
         ))}
