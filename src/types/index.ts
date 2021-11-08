@@ -28,3 +28,12 @@ export type Services = Array<{
   desc: string;
   icon: JSX.Element;
 }>;
+
+export interface HomeData {
+  name: string;
+  title: string;
+  desc: string;
+  number: string;
+  email: string;
+  cv: string;
+}
