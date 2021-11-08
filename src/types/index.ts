@@ -6,10 +6,10 @@ export type SocialMedias = Array<{
 
 export type Navs = Array<{ name: string; link: string; icon: JSX.Element }>;
 
-export type Abouts = Array<{
-  text: string;
+export type AboutData = Array<{
+  name: string;
   value: string;
-  icon: JSX.Element;
+  icon: string;
 }>;
 
 export type Educations = Array<{
@@ -36,4 +36,14 @@ export interface HomeData {
   number: string;
   email: string;
   cv: string;
+}
+
+export interface Portfolio {
+  img: string;
+  date: string;
+  title: string;
+  desc: string;
+  tech: string[];
+  demo: string;
+  sourceCode: string;
 }

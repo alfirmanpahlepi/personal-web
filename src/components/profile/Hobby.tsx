@@ -1,6 +1,8 @@
-import { Hobbies } from "@/types";
+// import { Hobbies } from "@/types";
 import Title from "../Title";
-import { BallIcon, GamepadIcon, GuitarIcon, CameraIcon } from "../icons";
+// import { BallIcon, GamepadIcon, GuitarIcon, CameraIcon } from "../icons";
+import data from "@/data/hobby.json";
+import Icon from "../icons";
 
 export default function Hobby() {
   return (
@@ -8,15 +10,15 @@ export default function Hobby() {
       <Title>
         my <b className="font-semibold">hobbies</b>
       </Title>
-      <p className="text-center text-purple-900 px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex delectus esse quae itaque optio magni. Sapiente ea ipsum totam!</p>
+      <p className="text-center text-purple-900 px-10">{data.desc}</p>
       <ul className="grid grid-cols-4 mt-8">
-        {hobbies.map((el, index) => (
+        {data.hobbies.map((el, index) => (
           <li
             key={index}
             className="flex flex-col justify-center items-center space-y-3 py-4"
           >
-            <i className="text-xl text-purple-900 h-7 w-7 sm:h-10 sm:w-10">
-              {el.icon}
+            <i className="text-xl text-purple-900 h-5 w-5 sm:h-6 sm:w-6">
+              <Icon name={el.icon} />
             </i>
             <p className="text-center text-purple-900">{el.name}</p>
           </li>
@@ -25,10 +27,3 @@ export default function Hobby() {
     </div>
   );
 }
-
-const hobbies: Hobbies = [
-  { name: "Music", icon: <GuitarIcon /> },
-  { name: "Game", icon: <GamepadIcon /> },
-  { name: "Photography", icon: <CameraIcon /> },
-  { name: "Sports", icon: <BallIcon /> },
-];
