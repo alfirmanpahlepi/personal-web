@@ -1,9 +1,12 @@
-// import { Educations } from "@/types";
+import { Educations } from "@/types/profile";
 import { GraduationIcon } from "../icons";
 import Title from "../Title";
-import data from "@/data/education.json";
 
-export default function Education() {
+interface EducationProps {
+  data: Educations;
+}
+
+export default function Education({ data }: EducationProps) {
   return (
     <div className="overflow-x-hidden px-10">
       <Title>

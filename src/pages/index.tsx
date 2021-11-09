@@ -1,13 +1,12 @@
-// import { HomeData } from "@/types";
-// import type { GetStaticProps } from "next";
+import { Home as HomeType } from "@/types/home";
+import type { GetStaticProps } from "next";
 import NextHead from "next/head";
-import data from "@/data/home.json"
 
-// interface HomeProps {
-//   data: HomeData;
-// }
+interface HomeProps {
+  data: HomeType;
+}
 
-const Home = () => (
+const Home = ({ data }: HomeProps) => (
   <>
     <NextHead>
       <title>{data.name}</title>
@@ -83,12 +82,12 @@ const Home = () => (
   </>
 );
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   // const res = await fetch("http://localhost:3000/api");
-//   // const data: HomeData = await res.json();
-//   return {
-//     props: { data },
-//   };
-// };
-
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await fetch("http://localhost:3000/api");
+  const data: HomeType = await res.json();
+  return {
+    props: { data },
+  };
+};

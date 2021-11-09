@@ -1,10 +1,12 @@
-// import { Hobbies } from "@/types";
+import { Hobbies } from "@/types/profile";
 import Title from "../Title";
-// import { BallIcon, GamepadIcon, GuitarIcon, CameraIcon } from "../icons";
-import data from "@/data/hobby.json";
 import Icon from "../icons";
 
-export default function Hobby() {
+interface HobbyProps {
+  data: { desc: string; hobbies: Hobbies };
+}
+
+export default function Hobby({ data }: HobbyProps) {
   return (
     <div className="overflow-x-hidden bg-gray-100">
       <Title>

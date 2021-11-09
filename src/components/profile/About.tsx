@@ -1,16 +1,12 @@
-// import { AboutData } from "@/types";
 import Title from "../Title";
-import { GetStaticProps } from "next";
-import data from "@/data/about.json"
 import Icon from "../icons";
+import { Abouts } from "@/types/profile";
 
-// interface AboutProps {
-//   data: AboutData;
-// }
+interface AboutProps {
+  data: Abouts;
+}
 
-export default function About() {
-  // console.log(data);
-  
+export default function About({ data }: AboutProps) {
   return (
     <div className="w-11/12 sm:w-2/3 mx-auto">
       <Title>
@@ -35,11 +31,3 @@ export default function About() {
     </div>
   );
 }
-
-// export const getStaticProps: GetStaticProps = async () => {
-//   // const res = await fetch("http://localhost:3000/api/about");
-//   // const data: AboutData = await res.json();
-//   return {
-//     props: { data },
-//   };
-// };

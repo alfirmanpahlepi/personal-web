@@ -1,0 +1,60 @@
+{
+  "about": [
+    {
+      "name": "Name",
+      "value": "Alfirman Ejha Pahlepi",
+      "icon": "User"
+    },
+    {
+      "name": "Date of Birth",
+      "value": "june 11th 1999",
+      "icon": "Date"
+    },
+    {
+      "name": "Phone",
+      "value": "+62 896-7375-7429",
+      "icon": "Phone"
+    },
+    {
+      "name": "E-mail",
+      "value": "alfirman.pahlepi@gmail.com",
+      "icon": "Envelope"
+    },
+    {
+      "name": "Web",
+      "value": "https://alfirman-pahlepi.vercel.app/",
+      "icon": "Globe"
+    },
+    {
+      "name": "Address",
+      "value": "Aceh Tamiang, Aceh, Indonesia",
+      "icon": "MapMarker"
+    }
+  ],
+  "education": [
+    {
+      "years": "2014 - 2017",
+      "school": "Senior High School / SMA N 2 Kejuruan Muda",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "years": "2011 - 2014",
+      "school": "Junior High School / SMP N 1 Kualasimpang",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "years": "2005 - 2011",
+      "school": "Elementary School / SD N 1 Sriwijaya",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    }
+  ],
+  "hobby": {
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex delectus esse quae itaque optio magni. Sapiente ea ipsum totam!",
+    "hobbies": [
+      { "name": "Music", "icon": "Guitar" },
+      { "name": "Game", "icon": "Gamepad" },
+      { "name": "Photography", "icon": "Camera" },
+      { "name": "Sports", "icon": "Ball" }
+    ]
+  }
+}

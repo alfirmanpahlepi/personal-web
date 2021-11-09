@@ -1,10 +1,12 @@
-// import { Services } from "@/types";
-// import { DiamondIcon, DollarIcon, LightBulbIcon, CodeIcon } from "../icons";
 import Title from "../Title";
-import data from "@/data/service.json";
 import Icon from "../icons";
+import { Services } from "@/types/resume";
 
-export default function Service() {
+interface ServiceProps {
+  data: { desc: string; services: Services };
+}
+
+export default function Service({ data }: ServiceProps) {
   return (
     <>
       <Title>

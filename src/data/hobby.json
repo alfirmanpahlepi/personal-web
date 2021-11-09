@@ -1,9 +1,0 @@
-{
-  "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex delectus esse quae itaque optio magni. Sapiente ea ipsum totam!",
-  "hobbies": [
-    { "name": "Music", "icon": "Guitar" },
-    { "name": "Game", "icon": "Gamepad" },
-    { "name": "Photography", "icon": "Camera" },
-    { "name": "Sports", "icon": "Ball" }
-  ]
-}
