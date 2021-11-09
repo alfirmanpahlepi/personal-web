@@ -15,7 +15,10 @@ const Resume = () => {
       <Head title="Resume" description="The things that can i do for you." />
       <section className="pb-5">
         <Service data={data.service} />
-        <Skill />
+        <Skill
+          favourites={data.skill.favourites}
+          familiars={data.skill.familiars}
+        />
       </section>
     </>
   );

@@ -23,5 +23,34 @@
         "icon": "Diamond"
       }
     ]
+  },
+  "skill": {
+    "favourites": ["react", "next", "typescript", "tailwind", "firebase"],
+    "familiars": [
+      "html",
+      "css",
+      "javascript",
+      "typescript",
+      "bootstrap",
+      "sass",
+      "font-awesome",
+      "tailwind",
+      "chakra-ui",
+      "react",
+      "redux",
+      "next",
+      "node",
+      "express",
+      "rest-api",
+      "socketio",
+      "mongodb",
+      "firebase",
+      "php",
+      "mysql",
+      "terminal",
+      "vscode",
+      "git",
+      "github"
+    ]
   }
 }
