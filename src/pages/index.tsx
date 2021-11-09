@@ -1,13 +1,13 @@
-import { URL } from "@/constants";
 import { Home as HomeType } from "@/types/home";
 import type { GetStaticProps } from "next";
 import NextHead from "next/head";
+import data from "@/data/home.json";
 
 interface HomeProps {
   data: HomeType;
 }
 
-const Home = ({ data }: HomeProps) => (
+const Home = () => (
   <>
     <NextHead>
       <title>{data.name}</title>
@@ -85,10 +85,10 @@ const Home = ({ data }: HomeProps) => (
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("https://alfirman-pahlepi.vercel.app/");
-  const data: HomeType = await res.json();
-  return {
-    props: { data },
-  };
-};
+// export const getStaticProps: GetStaticProps = async () => {
+//   const res = await fetch("https://alfirman-pahlepi.vercel.app/");
+//   const data: HomeType = await res.json();
+//   return {
+//     props: { data },
+//   };
+// };
