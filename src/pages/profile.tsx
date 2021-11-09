@@ -4,6 +4,7 @@ import Education from "@/components/profile/Education";
 import Hobby from "@/components/profile/Hobby";
 import Head from "@/components/Head";
 import { Profile as ProfileType } from "@/types/profile";
+import { URL } from "@/constants";
 
 interface ProfileProps {
   data: ProfileType;
@@ -23,7 +24,7 @@ const Profile = ({ data }: ProfileProps) => (
 export default Profile;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/profile");
+  const res = await fetch(URL("profile"));
   const data: ProfileType = await res.json();
   return {
     props: { data },

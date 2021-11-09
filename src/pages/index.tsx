@@ -1,3 +1,4 @@
+import { URL } from "@/constants";
 import { Home as HomeType } from "@/types/home";
 import type { GetStaticProps } from "next";
 import NextHead from "next/head";
@@ -85,7 +86,7 @@ const Home = ({ data }: HomeProps) => (
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api");
+  const res = await fetch(URL());
   const data: HomeType = await res.json();
   return {
     props: { data },

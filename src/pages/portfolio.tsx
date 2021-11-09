@@ -3,6 +3,7 @@ import Head from "@/components/Head";
 import Title from "@/components/Title";
 import Project from "@/components/portfolio/Project";
 import { Portfolio as PortfolioType } from "@/types/portfolio";
+import { URL } from "@/constants";
 
 interface PortfolioProps {
   data: PortfolioType;
@@ -31,7 +32,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
 export default Portfolio;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/portfolio");
+  const res = await fetch(URL("portfolio"));
   const data: PortfolioType = await res.json();
   return {
     props: { data },

@@ -1,6 +1,7 @@
 import Head from "@/components/Head";
 import Service from "@/components/resume/Service";
 import Skill from "@/components/resume/Skill";
+import { URL } from "@/constants";
 import { Services, Resume as ResumeType } from "@/types/resume";
 import { GetStaticProps } from "next";
 
@@ -23,7 +24,7 @@ const Resume = ({ data }: ResumeProps) => {
 export default Resume;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/resume");
+  const res = await fetch(URL("resume"));
   const data: ResumeType = await res.json();
   return {
     props: { data },
