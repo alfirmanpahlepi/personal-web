@@ -18,7 +18,7 @@ export default function Skill({ favourites, familiars }: SkillProps) {
         </p>
         <div className="flex flex-wrap mt-4">
           {favourites.map((fav, i) => (
-            <div key={i} className="h-[50px] w-[50px] m-2 relative">
+            <div key={i} className="w-[40px] h-[40px] xs:h-[50px] xs:w-[50px] m-2 relative">
               <Tech tech={fav} />
             </div>
           ))}
