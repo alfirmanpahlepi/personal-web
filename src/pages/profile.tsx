@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from "next";
+import { GetStaticProps } from "next";
 import About from "@/components/profile/About";
 import Education from "@/components/profile/Education";
 import Hobby from "@/components/profile/Hobby";

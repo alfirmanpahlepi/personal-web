@@ -1,10 +1,14 @@
-import { NextPage } from "next";
+import { GetStaticProps } from "next";
 import Head from "@/components/Head";
 import Title from "@/components/Title";
 import Project from "@/components/portfolio/Project";
-import data from "@/data/portfolio.json";
+import { Portfolio as PortfolioType } from "@/types/portfolio";
 
-const Portfolio: NextPage = () => {
+interface PortfolioProps {
+  data: PortfolioType;
+}
+
+const Portfolio = ({ data }: PortfolioProps) => {
   return (
     <>
       <Head title="Portfolio" description="Some collection of my past works." />
@@ -25,3 +29,11 @@ const Portfolio: NextPage = () => {
 };
 
 export default Portfolio;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await fetch("http://localhost:3000/api/portfolio");
+  const data: PortfolioType = await res.json();
+  return {
+    props: { data },
+  };
+};
