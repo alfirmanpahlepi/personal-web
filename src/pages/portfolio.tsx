@@ -12,9 +12,9 @@ const Portfolio: NextPage = () => {
         <Title>
           my <b className="font-semibold">Portfolio</b>
         </Title>
-        <ul className="space-y-3">
+        <ul className="grid grid-cols-2 gap-1 xs:gap-3">
           {data.map((el, i) => (
-            <li key={i} className="md:h-[300px]">
+            <li key={i} className="h-[130px] sm:h-[200px]">
               <Project portfolio={el} />
             </li>
           ))}

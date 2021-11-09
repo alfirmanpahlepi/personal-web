@@ -2,6 +2,9 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ["koran-online.vercel.app"],
+  },
   // async rewrites() {
   //   return [
   //     {
