@@ -24,7 +24,7 @@ const Profile = ({ data }: ProfileProps) => (
 export default Profile;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch(URL("profile"));
+  const res = await fetch("https://alfirman-pahlepi.vercel.app/profile");
   const data: ProfileType = await res.json();
   return {
     props: { data },

@@ -86,7 +86,7 @@ const Home = ({ data }: HomeProps) => (
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch(URL());
+  const res = await fetch("https://alfirman-pahlepi.vercel.app/");
   const data: HomeType = await res.json();
   return {
     props: { data },
