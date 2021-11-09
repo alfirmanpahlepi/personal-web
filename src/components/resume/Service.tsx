@@ -6,7 +6,7 @@ import Icon from "../icons";
 
 export default function Service() {
   return (
-    <div>
+    <>
       <Title>
         my <b className="font-semibold">services</b>
       </Title>
@@ -33,6 +33,6 @@ export default function Service() {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }

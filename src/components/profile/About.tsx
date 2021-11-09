@@ -1,6 +1,6 @@
 // import { AboutData } from "@/types";
 import Title from "../Title";
-// import { GetStaticProps } from "next";
+import { GetStaticProps } from "next";
 import data from "@/data/about.json"
 import Icon from "../icons";
 
@@ -9,6 +9,8 @@ import Icon from "../icons";
 // }
 
 export default function About() {
+  // console.log(data);
+  
   return (
     <div className="w-11/12 sm:w-2/3 mx-auto">
       <Title>
