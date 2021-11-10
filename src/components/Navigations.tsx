@@ -1,6 +1,7 @@
-import { Navs } from "@/types";
-import { CoperIcon, DocumentIcon, HomeIcon, PhoneIcon, UserIcon } from "./icons";
 import { NavLink } from "./NavLink";
+import { CoperIcon, DocumentIcon, HomeIcon, PhoneIcon, UserIcon } from "./icons";
+
+type Navs = Array<{ name: string; link: string; icon: JSX.Element }>;
 
 export default function Navigations() {
   return (

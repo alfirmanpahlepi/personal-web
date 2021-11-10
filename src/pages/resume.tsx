@@ -1,9 +1,9 @@
-import Head from "@/components/Head";
-import Service from "@/components/resume/Service";
-import Skill from "@/components/resume/Skill";
-import { Resume as ResumeType } from "@/types/resume";
 import { GetStaticProps } from "next";
 import { motion } from "framer-motion";
+import Head from "@/components/Head";
+import Skill from "@/components/resume/Skill";
+import Service from "@/components/resume/Service";
+import { Resume as ResumeType } from "@/types/resume";
 
 interface ResumeProps {
   data: ResumeType;

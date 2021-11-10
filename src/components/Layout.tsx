@@ -24,9 +24,6 @@ function Layout({ children }: LayoutProps) {
     }
   }, [asPath]);
 
-  const background: string =
-    "linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#FF9671,#FFC75F,#F9F871)";
-
   const colors = (): string[] => {
     let arr = [];
     for (let i = 45; i <= 360; i += 45) {
@@ -40,7 +37,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <motion.div
       ref={layoutRef}
-      initial={{ background }}
+      initial={{ background:"linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#FF9671,#FFC75F,#F9F871)" }}
       animate={{
         background: colors(),
         transition: {

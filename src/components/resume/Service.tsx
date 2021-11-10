@@ -1,6 +1,6 @@
+import { Services } from "@/types/resume";
 import Title from "../Title";
 import Icon from "../icons";
-import { Services } from "@/types/resume";
 
 interface ServiceProps {
   data: { desc: string; services: Services };

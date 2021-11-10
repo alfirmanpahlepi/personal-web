@@ -1,9 +1,9 @@
 import { GetStaticProps } from "next";
-import Head from "@/components/Head";
-import Title from "@/components/Title";
-import Project from "@/components/portfolio/Project";
-import { Portfolio as PortfolioType } from "@/types/portfolio";
 import { motion } from "framer-motion";
+import { Portfolio as PortfolioType } from "@/types/portfolio";
+import Project from "@/components/portfolio/Project";
+import Title from "@/components/Title";
+import Head from "@/components/Head";
 
 interface PortfolioProps {
   data: PortfolioType;

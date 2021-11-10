@@ -1,10 +1,10 @@
 import { GetStaticProps } from "next";
-import About from "@/components/profile/About";
+import { motion } from "framer-motion";
+import { Profile as ProfileType } from "@/types/profile";
 import Education from "@/components/profile/Education";
+import About from "@/components/profile/About";
 import Hobby from "@/components/profile/Hobby";
 import Head from "@/components/Head";
-import { Profile as ProfileType } from "@/types/profile";
-import { motion } from "framer-motion";
 
 interface ProfileProps {
   data: ProfileType;

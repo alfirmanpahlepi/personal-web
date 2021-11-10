@@ -1,6 +1,6 @@
+import { Abouts } from "@/types/profile";
 import Title from "../Title";
 import Icon from "../icons";
-import { Abouts } from "@/types/profile";
 
 interface AboutProps {
   data: Abouts;

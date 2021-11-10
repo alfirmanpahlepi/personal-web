@@ -8,9 +8,9 @@ export default function HeroImage() {
       style={{ backgroundImage: "url(/hero-img.jpg)" }}
     >
       <ul className="w-full flex justify-evenly mb-3">
-        {data.map((social) => (
+        {data.map((social, i) => (
           <li
-            key={social.color}
+            key={i}
             className="group h-12 w-12 relative bg-white border-2 border-white rounded-full overflow-hidden"
           >
             <a
