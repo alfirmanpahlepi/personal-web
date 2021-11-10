@@ -26,7 +26,8 @@ export default function Project({ portfolio }: ProjectProps) {
         </div>
         <div className="flex items-center justify-between">
           <a
-            href="#"
+            href={portfolio.demo}
+            target="_blank"
             rel="noreferrer"
             className="font-bold block xs:flex items-center space-x-2"
           >
@@ -37,6 +38,7 @@ export default function Project({ portfolio }: ProjectProps) {
           </a>
           <a
             href={portfolio.sourceCode}
+            target="_blank"
             rel="noreferrer"
             className="font-bold block xs:flex items-center space-x-2"
           >
