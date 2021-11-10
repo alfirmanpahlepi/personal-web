@@ -2,7 +2,6 @@ import Head from "@/components/Head";
 import Service from "@/components/resume/Service";
 import Skill from "@/components/resume/Skill";
 import { Resume as ResumeType } from "@/types/resume";
-import data from "@/data/resume.json";
 import { GetStaticProps } from "next";
 import { motion } from "framer-motion";
 
