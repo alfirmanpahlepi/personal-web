@@ -15,7 +15,7 @@ export default function HeroImage() {
           >
             <a
               href={social.link}
-              target="_blank"
+              target={social.link === "#" ? "_self" : "_blank"}
               rel="noreferrer"
               className="h-full w-full grid place-items-center z-20 absolute text-gray-800 group-hover:text-white duration-500"
             >
