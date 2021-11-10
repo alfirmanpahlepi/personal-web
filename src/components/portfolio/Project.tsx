@@ -17,7 +17,7 @@ export default function Project({ portfolio }: ProjectProps) {
         className="group-hover:opacity-30 duration-200"
         objectFit="cover"
         layout="fill"
-        alt="as"
+        alt={portfolio.img}
         src={`/portfolio/${portfolio.img}`}
       />
       <div className="p-3 absolute h-full w-full top-0 left-0 flex flex-col justify-between opacity-0 group-hover:opacity-100 duration-500">
