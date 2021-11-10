@@ -1,8 +1,8 @@
-import { Home as HomeType } from "@/types/home";
-import type { GetStaticProps } from "next";
 import NextHead from "next/head";
-import data from "@/data/home.json";
+import type { GetStaticProps } from "next";
 import { motion } from "framer-motion";
+import { Home as HomeType } from "@/types/home";
+import data from "@/data/home.json";
 
 interface HomeProps {
   data: HomeType;
