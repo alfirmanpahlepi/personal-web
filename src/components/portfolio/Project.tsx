@@ -2,10 +2,11 @@ import Image from "next/image";
 import { ArrowIcon, CodeIcon } from "../icons";
 
 interface ProjectProps {
-  portfolio: any;
+  portfolio: { img: string; title: string; demo: string; sourceCode: string };
 }
 
 export default function Project({ portfolio }: ProjectProps) {
+  
   return (
     <a href="#" className="h-full w-full relative group bg-black block">
       <Image
@@ -13,7 +14,7 @@ export default function Project({ portfolio }: ProjectProps) {
         objectFit="cover"
         layout="fill"
         alt="as"
-        src="https://koran-online.vercel.app/_next/image?url=https%3A%2F%2Fmvpthemes.com%2Fzoxnews%2Fwp-content%2Fuploads%2F2017%2F07%2Fairplane.jpg&w=750&q=75"
+        src={`/portfolio/${portfolio.img}`}
       />
       <div className="p-3 absolute h-full w-full top-0 left-0 flex flex-col justify-between opacity-0 group-hover:opacity-100 duration-500">
         <div className="text-center">

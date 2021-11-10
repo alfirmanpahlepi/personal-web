@@ -1,4 +1,4 @@
-import Tech from "../Tech";
+import Image from "next/image";
 import Title from "../Title";
 
 interface SkillProps {
@@ -18,8 +18,16 @@ export default function Skill({ favourites, familiars }: SkillProps) {
         </p>
         <div className="flex flex-wrap mt-4">
           {favourites.map((fav, i) => (
-            <div key={i} className="w-[40px] h-[40px] xs:h-[50px] xs:w-[50px] m-2 relative">
-              <Tech tech={fav} />
+            <div
+              key={i}
+              className="w-[40px] h-[40px] xs:h-[50px] xs:w-[50px] m-2 relative"
+            >
+              <Image
+                objectFit="contain"
+                layout="fill"
+                alt={fav}
+                src={`/tech/${fav}.png`}
+              />
             </div>
           ))}
         </div>
@@ -29,7 +37,12 @@ export default function Skill({ favourites, familiars }: SkillProps) {
         <div className="flex flex-wrap mt-4 w-full justify-center">
           {familiars.map((fam, i) => (
             <div key={i} className="h-[35px] w-[35px] relative m-2 opacity-60">
-              <Tech tech={fam} />
+              <Image
+                objectFit="contain"
+                layout="fill"
+                alt={fam}
+                src={`/tech/${fam}.png`}
+              />
             </div>
           ))}
         </div>
