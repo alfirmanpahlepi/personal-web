@@ -4,6 +4,7 @@ import Skill from "@/components/resume/Skill";
 import { Resume as ResumeType } from "@/types/resume";
 import data from "@/data/resume.json";
 import { GetStaticProps } from "next";
+import { motion } from "framer-motion";
 
 interface ResumeProps {
   data: ResumeType;
@@ -13,13 +14,17 @@ const Resume = ({ data }: ResumeProps) => {
   return (
     <>
       <Head title="Resume" description="The things that can i do for you." />
-      <section className="pb-5">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="pb-5"
+      >
         <Service data={data.service} />
         <Skill
           favourites={data.skill.favourites}
           familiars={data.skill.familiars}
         />
-      </section>
+      </motion.section>
     </>
   );
 };

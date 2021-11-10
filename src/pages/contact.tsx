@@ -1,22 +1,29 @@
-import { NextPage } from "next"
-import Title from "@/components/Title"
-import Form from "@/components/contact/Form"
-import Profile from "@/components/contact/Profile"
-import Head from "@/components/Head"
+import { NextPage } from "next";
+import Title from "@/components/Title";
+import Form from "@/components/contact/Form";
+import Profile from "@/components/contact/Profile";
+import Head from "@/components/Head";
+import { motion } from "framer-motion";
 
 const Contact: NextPage = () => {
   return (
     <>
       <Head title="Contact" description="contact me" />
-      <section className="w-11/12 xs:w-5/6 mx-auto">
-        <Title>Contact <b className="font-semibold">me</b></Title>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="w-11/12 xs:w-5/6 mx-auto"
+      >
+        <Title>
+          Contact <b className="font-semibold">me</b>
+        </Title>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <Profile />
           <Form />
         </div>
-      </section>
+      </motion.section>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

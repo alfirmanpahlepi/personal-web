@@ -2,6 +2,7 @@ import { Home as HomeType } from "@/types/home";
 import type { GetStaticProps } from "next";
 import NextHead from "next/head";
 import data from "@/data/home.json";
+import { motion } from "framer-motion";
 
 interface HomeProps {
   data: HomeType;
@@ -57,7 +58,11 @@ const Home = ({ data }: HomeProps) => (
       />
     </NextHead>
 
-    <section className="h-full flex flex-col items-center justify-center text-center py-10">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="h-full flex flex-col items-center justify-center text-center py-10"
+    >
       <div className="border-b-4 border-pink-600 font-semibold py-4 w-3/4 text-purple-900 mb-6">
         <h3 className="text-lg sm:text-xl">Hello I'am</h3>
         <h1 className="text-2xl sm:text-4xl my-2">{data.name}</h1>
@@ -79,7 +84,7 @@ const Home = ({ data }: HomeProps) => (
       >
         Download CV
       </a>
-    </section>
+    </motion.section>
   </>
 );
 

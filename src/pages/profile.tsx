@@ -5,6 +5,7 @@ import Hobby from "@/components/profile/Hobby";
 import Head from "@/components/Head";
 import { Profile as ProfileType } from "@/types/profile";
 import data from "@/data/profile.json";
+import { motion } from "framer-motion";
 
 interface ProfileProps {
   data: ProfileType;
@@ -13,11 +14,11 @@ interface ProfileProps {
 const Profile = ({ data }: ProfileProps) => (
   <>
     <Head title="Profile" description="Biodata of Alfirman Ejha Pahlepi" />
-    <section>
+    <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <About data={data.about} />
       <Education data={data.education} />
       <Hobby data={data.hobby} />
-    </section>
+    </motion.section>
   </>
 );
 

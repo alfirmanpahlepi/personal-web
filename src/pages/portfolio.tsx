@@ -4,6 +4,7 @@ import Title from "@/components/Title";
 import Project from "@/components/portfolio/Project";
 import { Portfolio as PortfolioType } from "@/types/portfolio";
 import data from "@/data/portfolio.json";
+import { motion } from "framer-motion";
 
 interface PortfolioProps {
   data: PortfolioType;
@@ -13,7 +14,11 @@ const Portfolio = ({ data }: PortfolioProps) => {
   return (
     <>
       <Head title="Portfolio" description="Some collection of my past works." />
-      <section className="w-11/12 xs:w-5/6 mx-auto mb-10">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="w-11/12 xs:w-5/6 mx-auto mb-10"
+      >
         <Title>
           my <b className="font-semibold">Portfolio</b>
         </Title>
@@ -24,7 +29,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
             </li>
           ))}
         </ul>
-      </section>
+      </motion.section>
     </>
   );
 };

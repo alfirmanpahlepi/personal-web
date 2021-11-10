@@ -57,13 +57,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           <nav className="h-[40px]">
             <Navigations />
           </nav>
-          <motion.main
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="h-[calc(100%-40px)] overflow-auto"
-          >
+          <main className="h-[calc(100%-40px)] overflow-auto">
             <Component {...pageProps} />
-          </motion.main>
+          </main>
         </div>
       </div>
     </motion.div>
