@@ -1,7 +1,6 @@
 import NextHead from "next/head";
 import type { GetStaticProps } from "next";
 import { motion } from "framer-motion";
-import data from "@/data/home.json";
 import { Home as HomeType } from "@/types/home";
 
 interface HomeProps {
@@ -91,8 +90,8 @@ const Home = ({ data }: HomeProps) => (
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const res = await fetch("http://localhost:3000/");
-  // const data: HomeType = await res.json();
+  const res = await fetch("https://alfirman-pahlepi.vercel.app/api/");
+  const data: HomeType = await res.json();
   return {
     props: { data },
   };

@@ -3,7 +3,6 @@ import Head from "@/components/Head";
 import Title from "@/components/Title";
 import Project from "@/components/portfolio/Project";
 import { Portfolio as PortfolioType } from "@/types/portfolio";
-import data from "@/data/portfolio.json";
 import { motion } from "framer-motion";
 
 interface PortfolioProps {

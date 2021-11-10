@@ -4,7 +4,6 @@ import Education from "@/components/profile/Education";
 import Hobby from "@/components/profile/Hobby";
 import Head from "@/components/Head";
 import { Profile as ProfileType } from "@/types/profile";
-import data from "@/data/profile.json";
 import { motion } from "framer-motion";
 
 interface ProfileProps {
@@ -25,8 +24,8 @@ const Profile = ({ data }: ProfileProps) => (
 export default Profile;
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const res = await fetch("https://alfirman-pahlepi.vercel.app/profile");
-  // const data: ProfileType = await res.json();
+  const res = await fetch("https://alfirman-pahlepi.vercel.app/api/profile/");
+  const data: ProfileType = await res.json();
   return {
     props: { data },
   };
