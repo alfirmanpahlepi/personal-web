@@ -12,7 +12,7 @@ export default function Navigations() {
             link={nav.link}
             className="h-full grid place-items-center uppercase text-sm duration-200"
             activeClassname="bg-white text-pink-700 font-bold"
-            deactiveClassname="bg-gray-100 text-gray-600 hover:bg-gray-200 font-medium"
+            deactiveClassname="bg-gray-100 text-black/60 hover:bg-gray-200 font-medium"
           >
             <span className="hidden xs:inline">{nav.name}</span>
             <i className="xs:hidden h-4 w-4">{nav.icon}</i>

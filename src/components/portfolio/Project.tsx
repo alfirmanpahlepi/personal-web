@@ -5,8 +5,8 @@ interface ProjectProps {
   portfolio: {
     img: string;
     title: string;
-    demo: string;
-    sourceCode: string;
+    demo?: string;
+    sourceCode?: string;
     id: number;
   };
 }
@@ -26,32 +26,36 @@ export default function Project({ portfolio }: ProjectProps) {
           <h4 className="sm:text-xl font-medium">{portfolio.title}</h4>
         </div>
         <div className="flex items-center justify-between">
-          <a
-            href={portfolio.demo}
-            target="_blank"
-            rel="noreferrer"
-            className="font-bold block xs:flex items-center xs:space-x-2"
-          >
-            <i className="h-4 w-4 inline-block sm:h-6 sm:w-6">
-              <ArrowIcon />
-            </i>
-            <span className="text-xs sm:text-base hidden xs:inline-block">
-              Visit project
-            </span>
-          </a>
-          <a
-            href={portfolio.sourceCode}
-            target="_blank"
-            rel="noreferrer"
-            className="font-bold block xs:flex items-center xs:space-x-2"
-          >
-            <i className="h-3 w-3 inline-block sm:h-5 sm:w-5">
-              <CodeIcon />
-            </i>
-            <span className="text-xs sm:text-base hidden xs:inline-block">
-              Source code
-            </span>
-          </a>
+          {portfolio.demo && (
+            <a
+              href={portfolio.demo}
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold block xs:flex items-center xs:space-x-2 px-2 xs:px-0"
+            >
+              <i className="h-10 w-10 inline-block xs:h-6 xs:w-6">
+                <ArrowIcon />
+              </i>
+              <span className="text-xs sm:text-base hidden xs:inline-block">
+                Visit project
+              </span>
+            </a>
+          )}
+          {portfolio.sourceCode && (
+            <a
+              href={portfolio.sourceCode}
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold block xs:flex items-center xs:space-x-2 px-2 xs:px-0"
+            >
+              <i className="h-8 w-8 inline-block xs:h-5 xs:w-5">
+                <CodeIcon />
+              </i>
+              <span className="text-xs sm:text-base hidden xs:inline-block">
+                Source code
+              </span>
+            </a>
+          )}
         </div>
       </div>
       <a
