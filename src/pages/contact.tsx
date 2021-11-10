@@ -1,8 +1,8 @@
 import { NextPage } from "next";
+import Head from "@/components/Head";
 import Title from "@/components/Title";
 import Form from "@/components/contact/Form";
 import Profile from "@/components/contact/Profile";
-import Head from "@/components/Head";
 import { motion } from "framer-motion";
 
 const Contact: NextPage = () => {
