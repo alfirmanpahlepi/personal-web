@@ -37,10 +37,10 @@ export default function Project({ portfolio }: ProjectProps) {
             rel="noreferrer"
             className="font-bold block xs:flex items-center xs:space-x-2"
           >
-            <i className="h-4 w-4 sm:h-6 sm:w-6 hidden xs:inline-block">
+            <i className="h-4 w-4 inline-block sm:h-6 sm:w-6">
               <ArrowIcon />
             </i>
-            <span className="text-xs sm:text-base">Visit project</span>
+            <span className="text-xs sm:text-base hidden xs:inline-block">Visit project</span>
           </a>
           <a
             href={portfolio.sourceCode}
@@ -48,10 +48,10 @@ export default function Project({ portfolio }: ProjectProps) {
             rel="noreferrer"
             className="font-bold block xs:flex items-center xs:space-x-2"
           >
-            <i className="h-3 w-3 sm:h-5 sm:w-5 hidden xs:inline-block">
+            <i className="h-3 w-3 inline-block sm:h-5 sm:w-5">
               <CodeIcon />
             </i>
-            <span className="text-xs sm:text-base">Source code</span>
+            <span className="text-xs sm:text-base hidden xs:inline-block">Source code</span>
           </a>
         </div>
       </div>
