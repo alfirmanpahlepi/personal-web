@@ -13,12 +13,7 @@ interface ProjectProps {
 
 export default function Project({ portfolio }: ProjectProps) {
   return (
-    <a
-      href={portfolio.demo}
-      target="_blank"
-      rel="noreferrer"
-      className="h-full w-full relative group block"
-    >
+    <div className="h-full w-full relative group block">
       <Image
         className="group-hover:opacity-30 duration-200"
         objectFit="cover"
@@ -40,7 +35,9 @@ export default function Project({ portfolio }: ProjectProps) {
             <i className="h-4 w-4 inline-block sm:h-6 sm:w-6">
               <ArrowIcon />
             </i>
-            <span className="text-xs sm:text-base hidden xs:inline-block">Visit project</span>
+            <span className="text-xs sm:text-base hidden xs:inline-block">
+              Visit project
+            </span>
           </a>
           <a
             href={portfolio.sourceCode}
@@ -51,10 +48,20 @@ export default function Project({ portfolio }: ProjectProps) {
             <i className="h-3 w-3 inline-block sm:h-5 sm:w-5">
               <CodeIcon />
             </i>
-            <span className="text-xs sm:text-base hidden xs:inline-block">Source code</span>
+            <span className="text-xs sm:text-base hidden xs:inline-block">
+              Source code
+            </span>
           </a>
         </div>
       </div>
-    </a>
+      <a
+        href={portfolio.demo}
+        target="_blank"
+        rel="noreferrer"
+        className="absolute top-0 left-0 h-3/4 w-full text-indigo-600 underline z-20 opacity-0"
+      >
+        {portfolio.img}
+      </a>
+    </div>
   );
 }

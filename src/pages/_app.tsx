@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Alfirman,Alfirman Ejha,Ejha Pahlepi,Pahlepi,Alfirman Ejha Pahlepi"
         />
         {/* Primary Meta Tags */}
-        <meta name="viewport" content="initial-scale=1" />
+        <meta name="viewport" content="width=device-width" />
         <meta name="title" content="Alfirman Ejha Pahlepi" />
         <meta
           name="description"

@@ -38,7 +38,12 @@ const Portfolio = ({ data }: PortfolioProps) => {
 export default Portfolio;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("https://alfirman-pahlepi.vercel.app/api/portfolio");
+  const res = await fetch("https://alfirman-pahlepi.vercel.app/api/portfolio", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
   const data: PortfolioType = await res.json();
   return {
     props: { data },

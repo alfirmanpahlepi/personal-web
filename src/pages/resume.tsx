@@ -31,7 +31,12 @@ const Resume = ({ data }: ResumeProps) => {
 export default Resume;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("https://alfirman-pahlepi.vercel.app/api/resume");
+  const res = await fetch("https://alfirman-pahlepi.vercel.app/api/resume", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
   const data: ResumeType = await res.json();
   return {
     props: { data },
