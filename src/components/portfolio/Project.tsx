@@ -29,7 +29,7 @@ export default function Project({ portfolio }: ProjectProps) {
             href={portfolio.demo}
             target="_blank"
             rel="noreferrer"
-            className="font-bold block xs:flex items-center space-x-2"
+            className="font-bold block xs:flex items-center xs:space-x-2"
           >
             <i className="h-4 w-4 sm:h-6 sm:w-6 hidden xs:inline-block">
               <ArrowIcon />
@@ -40,7 +40,7 @@ export default function Project({ portfolio }: ProjectProps) {
             href={portfolio.sourceCode}
             target="_blank"
             rel="noreferrer"
-            className="font-bold block xs:flex items-center space-x-2"
+            className="font-bold block xs:flex items-center xs:space-x-2"
           >
             <i className="h-3 w-3 sm:h-5 sm:w-5 hidden xs:inline-block">
               <CodeIcon />
