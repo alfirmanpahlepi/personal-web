@@ -22,11 +22,13 @@ const Portfolio = ({ data }: PortfolioProps) => {
           my <b className="font-semibold">Portfolio</b>
         </Title>
         <ul className="grid grid-cols-2 gap-1 xs:gap-3">
-          {data.map((el, i) => (
-            <li key={i} className="h-[130px] sm:h-[200px]">
-              <Project portfolio={el} />
-            </li>
-          ))}
+          {data
+            .sort((a, b) => b.id - a.id)
+            .map((el) => (
+              <li key={el.id} className="h-[130px] sm:h-[200px]">
+                <Project portfolio={el} />
+              </li>
+            ))}
         </ul>
       </motion.section>
     </>

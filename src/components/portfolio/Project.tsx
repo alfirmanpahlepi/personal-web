@@ -2,7 +2,13 @@ import Image from "next/image";
 import { ArrowIcon, CodeIcon } from "../icons";
 
 interface ProjectProps {
-  portfolio: { img: string; title: string; demo: string; sourceCode: string };
+  portfolio: {
+    img: string;
+    title: string;
+    demo: string;
+    sourceCode: string;
+    id: number;
+  };
 }
 
 export default function Project({ portfolio }: ProjectProps) {

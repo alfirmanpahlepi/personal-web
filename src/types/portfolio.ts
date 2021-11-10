@@ -3,4 +3,5 @@ export type Portfolio = {
   title: string;
   demo: string;
   sourceCode: string;
+  id: number;
 }[];
