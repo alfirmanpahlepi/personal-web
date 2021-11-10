@@ -2,31 +2,31 @@
   {
     "img": "shell-game.jpg",
     "title": "Shell Game",
-    "demo": "#",
-    "sourceCode": "#"
+    "demo": "https://shell-game-4e62b.web.app/",
+    "sourceCode": "https://github.com/ezza022/Shell-Game"
   },
   {
     "img": "handform.jpg",
     "title": "Handform",
-    "demo": "#",
-    "sourceCode": "#"
+    "demo": "https://handform-c62a3.web.app/",
+    "sourceCode": "https://github.com/ezza022/handform"
   },
   {
     "img": "cv-maker.jpg",
     "title": "Cv Maker",
-    "demo": "#",
-    "sourceCode": "#"
+    "demo": "https://cv-maker-ezza022.vercel.app/",
+    "sourceCode": "https://github.com/ezza022/cv-maker"
   },
   {
     "img": "snake-and-ladder.jpg",
     "title": "Snake and Ladder",
-    "demo": "#",
-    "sourceCode": "#"
+    "demo": "https://cv-maker-ezza022.vercel.app/",
+    "sourceCode": "https://github.com/ezza022/snake-and-ladder"
   },
   {
     "img": "personal-web.jpg",
     "title": "Personal Website",
-    "demo": "#",
-    "sourceCode": "#"
+    "demo": "https://alfirman-pahlepi.vercel.app/",
+    "sourceCode": "https://github.com/ezza022/personal-web"
   }
 ]

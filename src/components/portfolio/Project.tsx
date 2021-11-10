@@ -6,11 +6,15 @@ interface ProjectProps {
 }
 
 export default function Project({ portfolio }: ProjectProps) {
-  
   return (
-    <a href="#" className="h-full w-full relative group bg-black block">
+    <a
+      href={portfolio.demo}
+      target="_blank"
+      rel="noreferrer"
+      className="h-full w-full relative group block"
+    >
       <Image
-        className="group-hover:opacity-80 duration-200"
+        className="group-hover:opacity-30 duration-200"
         objectFit="cover"
         layout="fill"
         alt="as"
@@ -21,18 +25,26 @@ export default function Project({ portfolio }: ProjectProps) {
           <h4 className="sm:text-xl font-medium">{portfolio.title}</h4>
         </div>
         <div className="flex items-center justify-between">
-          <button className="font-bold xs:flex items-center space-x-2">
+          <a
+            href="#"
+            rel="noreferrer"
+            className="font-bold block xs:flex items-center space-x-2"
+          >
             <i className="h-4 w-4 sm:h-6 sm:w-6 hidden xs:inline-block">
               <ArrowIcon />
             </i>
             <span className="text-xs sm:text-base">Visit project</span>
-          </button>
-          <button className="font-bold xs:flex items-center space-x-2">
+          </a>
+          <a
+            href={portfolio.sourceCode}
+            rel="noreferrer"
+            className="font-bold block xs:flex items-center space-x-2"
+          >
             <i className="h-3 w-3 sm:h-5 sm:w-5 hidden xs:inline-block">
               <CodeIcon />
             </i>
             <span className="text-xs sm:text-base">Source code</span>
-          </button>
+          </a>
         </div>
       </div>
     </a>
