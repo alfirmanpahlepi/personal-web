@@ -7,7 +7,7 @@ interface HomeProps {
   data: HomeType;
 }
 
-const Home = () => (
+const Home = ({ data }: HomeProps) => (
   <>
     <NextHead>
       <title>{data.name}</title>
@@ -85,10 +85,10 @@ const Home = () => (
 
 export default Home;
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const res = await fetch("https://alfirman-pahlepi.vercel.app/");
-//   const data: HomeType = await res.json();
-//   return {
-//     props: { data },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async () => {
+  // const res = await fetch("http://localhost:3000/");
+  // const data: HomeType = await res.json();
+  return {
+    props: { data },
+  };
+};

@@ -10,7 +10,7 @@ interface ProfileProps {
   data: ProfileType;
 }
 
-const Profile = () => (
+const Profile = ({ data }: ProfileProps) => (
   <>
     <Head title="Profile" description="Biodata of Alfirman Ejha Pahlepi" />
     <section>
@@ -23,10 +23,10 @@ const Profile = () => (
 
 export default Profile;
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const res = await fetch("https://alfirman-pahlepi.vercel.app/profile");
-//   const data: ProfileType = await res.json();
-//   return {
-//     props: { data },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async () => {
+  // const res = await fetch("https://alfirman-pahlepi.vercel.app/profile");
+  // const data: ProfileType = await res.json();
+  return {
+    props: { data },
+  };
+};

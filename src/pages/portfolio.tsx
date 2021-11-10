@@ -3,13 +3,13 @@ import Head from "@/components/Head";
 import Title from "@/components/Title";
 import Project from "@/components/portfolio/Project";
 import { Portfolio as PortfolioType } from "@/types/portfolio";
-import data from "@/data/portfolio.json"
+import data from "@/data/portfolio.json";
 
 interface PortfolioProps {
   data: PortfolioType;
 }
 
-const Portfolio = () => {
+const Portfolio = ({ data }: PortfolioProps) => {
   return (
     <>
       <Head title="Portfolio" description="Some collection of my past works." />
@@ -31,10 +31,10 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const res = await fetch("https://alfirman-pahlepi.vercel.app/portfolio");
-//   const data: PortfolioType = await res.json();
-//   return {
-//     props: { data },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async () => {
+  // const res = await fetch("https://alfirman-pahlepi.vercel.app/portfolio");
+  // const data: PortfolioType = await res.json();
+  return {
+    props: { data },
+  };
+};
