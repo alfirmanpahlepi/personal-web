@@ -3,6 +3,7 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    formats: ["image/avif", "image/webp"],
     domains: ["koran-online.vercel.app"],
   },
   // async rewrites() {
