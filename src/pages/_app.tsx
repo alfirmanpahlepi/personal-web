@@ -1,7 +1,11 @@
 import type { AppProps } from "next/app";
 import NextHead from "next/head";
+import { Router } from "next/router";
+import NProgress from "nprogress";
 import Layout from "@/components/Layout";
 import "tailwindcss/tailwind.css";
+import "nprogress/nprogress.css"
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -61,3 +65,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
+
+NProgress.configure({ showSpinner: false });
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
