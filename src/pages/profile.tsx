@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetStaticProps, NextPage } from "next";
 import { motion } from "framer-motion";
 import { Profile as ProfileType } from "@/types/profile";
 import Education from "@/components/profile/Education";
@@ -10,7 +10,7 @@ interface ProfileProps {
   data: ProfileType;
 }
 
-const Profile = ({ data }: ProfileProps) => (
+const Profile: NextPage<ProfileProps> = ({ data }) => (
   <>
     <Head title="Profile" description="Biodata of Alfirman Ejha Pahlepi" />
     <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }}>

@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetStaticProps, NextPage } from "next";
 import { motion } from "framer-motion";
 import { Portfolio as PortfolioType } from "@/types/portfolio";
 import Project from "@/components/portfolio/Project";
@@ -9,7 +9,7 @@ interface PortfolioProps {
   data: PortfolioType;
 }
 
-const Portfolio = ({ data }: PortfolioProps) => {
+const Portfolio: NextPage<PortfolioProps> = ({ data }) => {
   return (
     <>
       <Head title="Portfolio" description="Some collection of my past works." />

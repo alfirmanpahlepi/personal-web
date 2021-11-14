@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import { motion } from "framer-motion";
 import { Home as HomeType } from "@/types/home";
 
@@ -6,7 +6,7 @@ interface HomeProps {
   data: HomeType;
 }
 
-const Home = ({ data }: HomeProps) => (
+const Home: NextPage<HomeProps> = ({ data }) => (
   <motion.section
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}

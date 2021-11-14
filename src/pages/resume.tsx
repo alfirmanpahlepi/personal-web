@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+import { GetStaticProps, NextPage } from "next";
 import { motion } from "framer-motion";
 import Head from "@/components/Head";
 import Skill from "@/components/resume/Skill";
@@ -9,7 +9,7 @@ interface ResumeProps {
   data: ResumeType;
 }
 
-const Resume = ({ data }: ResumeProps) => {
+const Resume: NextPage<ResumeProps> = ({ data }) => {
   return (
     <>
       <Head title="Resume" description="The things that can i do for you." />

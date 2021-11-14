@@ -24,7 +24,7 @@
     "id": 4,
     "img": "snake-and-ladder.jpg",
     "title": "Snake and Ladder",
-    "demo": "https://cv-maker-ezza022.vercel.app/",
+    "demo": "https://snake-and-ladder-five.vercel.app/",
     "sourceCode": "https://github.com/ezza022/snake-and-ladder"
   },
   {
@@ -33,5 +33,12 @@
     "title": "Personal Website",
     "demo": "https://alfirman-pahlepi.vercel.app/",
     "sourceCode": "https://github.com/ezza022/personal-web"
+  },
+  {
+    "id": 6,
+    "img": "news-app.jpg",
+    "title": "News App",
+    "demo": "https://news-app-sepia.vercel.app/",
+    "sourceCode": "https://github.com/ezza022/news-app"
   }
 ]
