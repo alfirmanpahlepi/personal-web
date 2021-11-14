@@ -29,16 +29,16 @@
   },
   {
     "id": 5,
+    "img": "newsapp.jpg",
+    "title": "News App",
+    "demo": "https://news-app-sepia.vercel.app/",
+    "sourceCode": "https://github.com/ezza022/news-app"
+  },
+  {
+    "id": 6,
     "img": "personal-web.jpg",
     "title": "Personal Website",
     "demo": "https://alfirman-pahlepi.vercel.app/",
     "sourceCode": "https://github.com/ezza022/personal-web"
-  },
-  {
-    "id": 6,
-    "img": "news-app.jpg",
-    "title": "News App",
-    "demo": "https://news-app-sepia.vercel.app/",
-    "sourceCode": "https://github.com/ezza022/news-app"
   }
 ]
