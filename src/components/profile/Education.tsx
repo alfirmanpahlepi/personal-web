@@ -36,14 +36,14 @@ export default function Education({ data }: EducationProps) {
             <div>
               <div className="h-4 w-4 rounded-full bg-pink-600 ring ring-pink-200 relative top-2"></div>
             </div>
-            <div className="w-full space-y-2 sm:space-y-0">
+            <div className="w-full">
               <h3 className="w-28 bg-pink-600 ring ring-pink-200 text-center py-1 text-white rounded-2xl text-sm sm:text-base sm:hidden">
                 {el.years}
               </h3>
-              <p className="sm:text-lg text-purple-900 font-semibold">
+              <p className="sm:text-lg text-purple-900 font-semibold mt-2 sm:mt-0">
                 {el.school}
               </p>
-              <p className="text-purple-900/70 text-xs sm:text-sm">{el.desc}</p>
+              <p className="text-purple-900/70 text-xs sm:text-sm mt-3">{el.desc}</p>
             </div>
           </li>
         ))}
