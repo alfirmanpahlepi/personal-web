@@ -1,7 +1,13 @@
+import { FormEvent } from "react";
+
 export default function Form() {
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    alert("something went wrong");
+  };
   return (
     <form
-      // onSubmit={(e) => handleSubmit(e)}
+      onSubmit={(e) => handleSubmit(e)}
       className="p-6 flex flex-col justify-center"
     >
       <div className="flex flex-col">
@@ -41,5 +47,5 @@ export default function Form() {
         Submit
       </button>
     </form>
-  )
+  );
 }
