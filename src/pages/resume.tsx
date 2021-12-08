@@ -20,7 +20,7 @@ const Resume: NextPage<ResumeProps> = ({ data }) => {
         className="pb-5"
       >
         <Service data={data.service} />
-        {/* <Experience data={data.experience} /> */}
+        <Experience data={data.experience} />
         <Skill
           favourites={data.skill.favourites}
           familiars={data.skill.familiars}
