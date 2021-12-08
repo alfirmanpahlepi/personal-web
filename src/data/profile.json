@@ -54,7 +54,7 @@
     }
   ],
   "hobby": {
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex delectus esse quae itaque optio magni. Sapiente ea ipsum totam!",
+    "desc": "when i am stuck with problems in my code i will enjoy my life doing my hobbies like listening to Music, playing Games, Photography and Sports",
     "hobbies": [
       { "name": "Music", "icon": "Guitar" },
       { "name": "Game", "icon": "Gamepad" },
