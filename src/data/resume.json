@@ -24,6 +24,18 @@
       }
     ]
   },
+  "experience": [
+    {
+      "years": "2021 - Now",
+      "role": "MSIB React & React Native / Hacktiv8",
+      "desc": "An activity program from Kampus Merdeka called Magang Studi Independen Bersertifikat in Collaboration with Hacktiv8. Participants are expected to be able to create a website based on a javascript framework and create a complex mobile application in the form of Android / iOS. Graduates of this program are expected to have the ability to work as Front End Developers and/or Mobile Apps"
+    },
+    {
+      "years": "2021 - Now",
+      "role": "Frontend Developer / Virtual Moves Co",
+      "desc": "Virtual Moves Co is a startup company that has a vision to accommodate millennials to find job vacancies, my job is as a Frontend Developer which is responsible for producing lines of code that will become interactive User Interface"
+    }
+  ],
   "skill": {
     "favourites": ["react", "next", "typescript", "tailwind", "firebase"],
     "familiars": [

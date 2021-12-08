@@ -4,6 +4,7 @@ import { Resume as ResumeType } from "@/types/resume";
 import Head from "@/components/Head";
 import Skill from "@/components/resume/Skill";
 import Service from "@/components/resume/Service";
+import Experience from "@/components/resume/Experience";
 
 interface ResumeProps {
   data: ResumeType;
@@ -19,6 +20,7 @@ const Resume: NextPage<ResumeProps> = ({ data }) => {
         className="pb-5"
       >
         <Service data={data.service} />
+        <Experience data={data.experience} />
         <Skill
           favourites={data.skill.favourites}
           familiars={data.skill.familiars}

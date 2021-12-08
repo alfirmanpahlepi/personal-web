@@ -4,6 +4,12 @@ export type Services = Array<{
   icon: string;
 }>;
 
+export type Experience = Array<{
+  years: string;
+  role: string;
+  desc: string;
+}>;
+
 interface Skill {
   familiars: string[];
   favourites: string[];
@@ -12,4 +18,5 @@ interface Skill {
 export type Resume = {
   service: { desc: string; services: Services };
   skill: Skill;
+  experience: Experience;
 };
