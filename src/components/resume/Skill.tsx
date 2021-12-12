@@ -36,7 +36,7 @@ export default function Skill({ favourites, familiars }: SkillProps) {
         </p>
         <div className="flex flex-wrap mt-4 w-full justify-center">
           {familiars.map((fam, i) => (
-            <div key={i} className="h-[35px] w-[35px] relative m-2 opacity-60">
+            <div key={i} className="h-[35px] w-[35px] relative m-2 saturate-50 opacity-50 hover:saturate-200 hover:opacity-100 duration-200">
               <Image
                 objectFit="contain"
                 layout="fill"
